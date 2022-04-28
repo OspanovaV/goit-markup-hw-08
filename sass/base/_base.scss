@@ -1,0 +1,17 @@
+@import "./reset";
+
+body {
+    background-color: var(--secondary-white-color);
+    color: var(--primary-text-color);
+
+    font-family: var(--main-font);
+    letter-spacing: 0.03em;
+}
+
+.section {
+    padding: 94px 0;
+}
+
+img {
+    display: block;
+}
