@@ -16,13 +16,58 @@
     <header class="page-header">
         <div class="container navigation">
             <a href="/" class="logo"><span class="logo-web">Web</span>Studio</a>
+            <button class="menu-btn" data-menu-button type="button" aria-label="кнопка открытия меню" aria-expanded="false">
+                <svg class="menu-btn__icon" width="40" height="40">
+                    <use class="menu-btn__icon-open" href="./images/sprite.svg#open-menu-icon"></use>
+                    <use class="menu-btn__icon-close" href="./images/sprite.svg#close-menu-icon"></use>
+                </svg>
+            </button>
+            <div class="mobile-menu" data-menu>
+                <ul class="menu-nav list">
+                    <li class="menu-nav__item">
+                        <a href="./index.html" class="menu-nav__link menu-nav__link--current">Студия</a>
+                    </li>
+                    <li class="menu-nav__item">
+                        <a href="./portfolio.html" class="menu-nav__link">Портфолио</a>
+                    </li>
+                    <li class="menu-nav__item">
+                        <a href="" class="menu-nav__link">Контакты</a>
+                    </li>
+                </ul>
+                <div class="mobile-menu-group">
+                    <ul class="menu-contacts">
+                        <li class="menu-contacts__item">
+                            <a class="menu-contacts__link" href="tel:+380961111111">
+                                +38 096 111 11 11</a>
+                        </li>
+                        <li class="menu-contacts__item">
+                            <a class="menu-contacts__link" href="mailto:info@devstudio.com">
+                                info@devstudio.com</a>
+                        </li>
+                    </ul>
+                    <ul class="menu-social">
+                        <li class="menu-social__item">
+                            <a class="menu-social__link" href="">Twitter</a>
+                        </li>
+                        <li class="menu-social__item">
+                            <a class="menu-social__link" href="">Instagram</a>
+                        </li>
+                        <li class="menu-social__item">
+                            <a class="menu-social__link" href="">Facebook</a>
+                        </li>
+                        <li class="menu-social__item">
+                            <a class="menu-social__link" href="">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <nav class="nav">
                 <ul class="nav__list list">
                     <li class="nav__item">
-                        <a href="./index.html" class="nav__link">Студия</a>
+                        <a href="./index.html" class="nav__link nav__link--current">Студия</a>
                     </li>
                     <li class="nav__item">
-                        <a href="./portfolio.html" class="nav__link nav__link--current">Портфолио</a>
+                        <a href="./portfolio.html" class="nav__link">Портфолио</a>
                     </li>
                     <li class="nav__item">
                         <a href="" class="nav__link">Контакты</a>
@@ -244,7 +289,7 @@
             </div>
             <div class="subscribe">
                 <h3 class="title">Подпишитесь на рассылку</h3>
-                <form>
+                <form class="subscribe-form">
                     <input class="subscribe-input" type="email" name="email" placeholder="E-mail">
                     <button class="subscribe-button" type="submit">Подписаться</button>
                 </form>
@@ -259,6 +304,8 @@
 
         document.body.style.paddingTop = `${pageHeaderHeight}px`;
     </script>
+    <!-- скрипт для мобильного меню -->
+    <script src="./js/menu.js"></script>
     </body>
 </html>
 
