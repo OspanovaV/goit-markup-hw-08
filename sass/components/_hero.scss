@@ -10,13 +10,38 @@
     margin-left: auto;
     margin-right: auto;
 
+    background-color: #c4c4c4;
+    background-size: cover;
+
     background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url("../images/hero.jpg");
+// Ретінізація фонових зображень+підтримка формату webp
+        url("../images/hero/bg-hero_sm.png");
+    background-image: -webkit-image-set(url("../images/hero/bg-hero_sm.webp") 1x);
+    @include mq(retina) {
+        background-image: url("../images/hero/bg-hero_sm@2x.png");
+        background-image: -webkit-image-set(url("../images/hero/bg-hero_sm@2x.webp") 2x);
+    }
 
-    background-color: #c4c4c4;
-    background-size: cover;
+    @include mq(tablet) {
+        background-image: url("../images/hero/bg-hero_md.png");
+        background-image: -webkit-image-set(url("../images/hero/bg-hero_md.webp") 1x);
+        @include mq(retina) {
+            background-image: url("../images/hero/bg-hero_md@2x.png");
+            background-image: -webkit-image-set(url("../images/hero/bg-hero_md@2x.webp") 2x);
+        }
+    }
+
+    @include mq(desktop) {
+        background-image: url("../images/hero/bg-hero_lg.png");
+        background-image: -webkit-image-set(url("../images/hero/bg-hero_lg.webp") 1x);
+        @include mq(retina) {
+            background-image: url("../images/hero/bg-hero_lg@2x.png");
+            background-image: -webkit-image-set(url("../images/hero/bg-hero_lg@2x.webp") 2x);
+        }
+    }
+    
 }
 
 .hero-title {

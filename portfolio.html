@@ -25,10 +25,10 @@
             <div class="mobile-menu" data-menu>
                 <ul class="menu-nav list">
                     <li class="menu-nav__item">
-                        <a href="./index.html" class="menu-nav__link menu-nav__link--current">Студия</a>
+                        <a href="./index.html" class="menu-nav__link">Студия</a>
                     </li>
                     <li class="menu-nav__item">
-                        <a href="./portfolio.html" class="menu-nav__link">Портфолио</a>
+                        <a href="./portfolio.html" class="menu-nav__link menu-nav__link--current">Портфолио</a>
                     </li>
                     <li class="menu-nav__item">
                         <a href="" class="menu-nav__link">Контакты</a>
@@ -64,10 +64,10 @@
             <nav class="nav">
                 <ul class="nav__list list">
                     <li class="nav__item">
-                        <a href="./index.html" class="nav__link nav__link--current">Студия</a>
+                        <a href="./index.html" class="nav__link">Студия</a>
                     </li>
                     <li class="nav__item">
-                        <a href="./portfolio.html" class="nav__link">Портфолио</a>
+                        <a href="./portfolio.html" class="nav__link nav__link--current">Портфолио</a>
                     </li>
                     <li class="nav__item">
                         <a href="" class="nav__link">Контакты</a>
@@ -107,7 +107,42 @@
                     <li class="portfolio-card">
                         <a href="" class="portfolio-link">
                             <div class="portfolio-foto-overlay">
-                            <img class="portfolio-foto" src="./images/portfolio/tecnokriac.jpg" alt="фото сотрудников" width="370">
+                            <picture>
+                                <source
+                                    srcset="./images/portfolio/tecnokriac_lg.webp 1x,
+                                         ./images/portfolio/tecnokriac_lg@2x.webp 2x"
+                                    media="(min-width: 1200px)"
+                                    type="image/webp"/>
+                                <source
+                                    srcset="./images/portfolio/tecnokriac_lg.jpg    1x,
+                                            ./images/portfolio/tecnokriac_lg@2x.jpg 2x"
+                                    media="(min-width: 1200px)"
+                                    type="image/jpeg"/>
+                                <source
+                                    srcset="./images/portfolio/tecnokriac_md.webp 1x,
+                                         ./images/portfolio/tecnokriac_md@2x.webp 2x"
+                                    media="(min-width: 768px)"
+                                    type="image/webp"/>
+                                <source
+                                    srcset="./images/portfolio/tecnokriac_md.jpg    1x,
+                                            ./images/portfolio/tecnokriac_md@2x.jpg 2x"
+                                    media="(min-width: 768px)"
+                                    type="image/jpeg"/>
+                                <source
+                                    srcset="./images/portfolio/tecnokriac_sm.webp 1x,
+                                         ./images/portfolio/tecnokriac_sm@2x.webp 2x"
+                                    media="(max-width: 767px)"
+                                    type="image/webp"/>
+                                <source
+                                    srcset="./images/portfolio/tecnokriac_sm@2x.jpg 2x"
+                                    media="(max-width: 767px)"
+                                    type="image/jpeg"/>
+                                <img class="portfolio-foto" 
+                                    src="./images/portfolio/tecnokriac_sm.jpg" 
+                                    alt="фото сотрудников" 
+                                    width="450"
+                                    height="294">
+                            </picture>
                             <div class="portfolio-overlay">
                                 <p class="overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице</p>
@@ -122,7 +157,42 @@
                     <li class="portfolio-card">
                         <a href="" class="portfolio-link">
                             <div class="portfolio-foto-overlay">
-                                <img class="portfolio-foto" src="./images/portfolio/poster.jpg" alt="мужчины играют в баскетбол" width="370">
+                                <picture>
+                                    <source
+                                        srcset="./images/portfolio/poster_lg.webp 1x,
+                                             ./images/portfolio/poster_lg@2x.webp 2x"
+                                        media="(min-width: 1200px)"
+                                        type="image/webp"/>
+                                    <source
+                                        srcset="./images/portfolio/poster_lg.jpg    1x,
+                                                ./images/portfolio/poster_lg@2x.jpg 2x"
+                                        media="(min-width: 1200px)"
+                                        type="image/jpeg"/>
+                                    <source
+                                        srcset="./images/portfolio/poster_md.webp 1x,
+                                             ./images/portfolio/poster_md@2x.webp 2x"
+                                        media="(min-width: 768px)"
+                                        type="image/webp"/>
+                                    <source
+                                        srcset="./images/portfolio/poster_md.jpg    1x,
+                                                ./images/portfolio/poster_md@2x.jpg 2x"
+                                        media="(min-width: 768px)"
+                                        type="image/jpeg"/>
+                                    <source
+                                        srcset="./images/portfolio/poster_sm.webp 1x,
+                                             ./images/portfolio/poster_sm@2x.webp 2x"
+                                        media="(max-width: 767px)"
+                                        type="image/webp"/>
+                                    <source
+                                        srcset="./images/portfolio/poster_sm@2x.jpg 2x"
+                                        media="(max-width: 767px)"
+                                        type="image/jpeg"/>
+                                    <img class="portfolio-foto" 
+                                    src="./images/portfolio/poster_sm.jpg" 
+                                    alt="мужчины играют в баскетбол" 
+                                    width="450"
+                                    height="294">
+                                </picture>
                                 <div class="portfolio-overlay">
                                     <p class="overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                     позволит посетителю получить исчерпывающие сведения о компании или частном лице</p>
@@ -137,7 +207,42 @@
                     <li class="portfolio-card">
                         <a href="" class="portfolio-link">
                             <div class="portfolio-foto-overlay">
-                                <img class="portfolio-foto" src="./images/portfolio/restaurant.jpg" alt="вывеска с названием ресторана" width="370">
+                                <picture>
+                                    <source
+                                        srcset="./images/portfolio/restaurant_lg.webp 1x,
+                                             ./images/portfolio/restaurant_lg@2x.webp 2x"
+                                        media="(min-width: 1200px)"
+                                        type="image/webp"/>
+                                    <source
+                                        srcset="./images/portfolio/restaurant_lg.jpg    1x,
+                                                ./images/portfolio/restaurant_lg@2x.jpg 2x"
+                                        media="(min-width: 1200px)"
+                                        type="image/jpeg"/>
+                                    <source
+                                        srcset="./images/portfolio/restaurant_md.webp 1x,
+                                             ./images/portfolio/restaurant_md@2x.webp 2x"
+                                        media="(min-width: 768px)"
+                                        type="image/webp"/>
+                                    <source
+                                        srcset="./images/portfolio/restaurant_md.jpg    1x,
+                                                ./images/portfolio/restaurant_md@2x.jpg 2x"
+                                        media="(min-width: 768px)"
+                                        type="image/jpeg"/>
+                                    <source
+                                        srcset="./images/portfolio/restaurant_sm.webp 1x,
+                                             ./images/portfolio/restaurant_sm@2x.webp 2x"
+                                        media="(max-width: 767px)"
+                                        type="image/webp"/>
+                                    <source
+                                        srcset="./images/portfolio/restaurant_sm@2x.jpg 2x"
+                                        media="(max-width: 767px)"
+                                        type="image/jpeg"/>
+                                    <img class="portfolio-foto" 
+                                        src="./images/portfolio/restaurant_sm.jpg" 
+                                        alt="вывеска с названием ресторана" 
+                                        width="450"
+                                        height="294">
+                                </picture>
                                 <div class="portfolio-overlay">
                                     <p class="overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                         позволит посетителю получить исчерпывающие сведения о компании или частном лице</p>
@@ -152,7 +257,42 @@
                     <li class="portfolio-card">
                         <a href="" class="portfolio-link">
                             <div class="portfolio-foto-overlay">
-                                <img class="portfolio-foto" src="./images/portfolio/prime.jpg" alt="наушники" width="370">
+                                <picture>
+                                    <source
+                                        srcset="./images/portfolio/prime_lg.webp 1x,
+                                            ./images/portfolio/prime_lg@2x.webp 2x"
+                                        media="(min-width: 1200px)"
+                                        type="image/webp"/>
+                                    <source
+                                        srcset="./images/portfolio/prime_lg.jpg    1x,
+                                                ./images/portfolio/prime_lg@2x.jpg 2x"
+                                        media="(min-width: 1200px)"
+                                        type="image/jpeg"/>
+                                    <source
+                                        srcset="./images/portfolio/prime_md.webp 1x,
+                                            ./images/portfolio/prime_md@2x.webp 2x"
+                                        media="(min-width: 768px)"
+                                        type="image/webp"/>
+                                    <source
+                                        srcset="./images/portfolio/prime_md.jpg    1x,
+                                                ./images/portfolio/prime_md.jpg    2x"
+                                        media="(min-width: 768px)"
+                                        type="image/jpeg"/>
+                                    <source
+                                        srcset="./images/portfolio/prime_sm.webp 1x,
+                                            ./images/portfolio/prime_sm@2x.webp  2x"
+                                        media="(max-width: 767px)"
+                                        type="image/webp"/>
+                                    <source
+                                        srcset="./images/portfolio/prime_sm@2x.jpg 2x"
+                                        media="(max-width: 767px)"
+                                        type="image/jpeg"/>
+                                    <img class="portfolio-foto" 
+                                        src="./images/portfolio/prime_sm.jpg" 
+                                        alt="наушники" 
+                                        width="450"
+                                        height="294">
+                                </picture>
                                 <div class="portfolio-overlay">
                                     <p class="overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                         позволит посетителю получить исчерпывающие сведения о компании или частном лице</p>
@@ -167,7 +307,42 @@
                     <li class="portfolio-card">
                         <a href="" class="portfolio-link">
                             <div class="portfolio-foto-overlay">
-                                <img class="portfolio-foto" src="./images/portfolio/boxes.jpg" alt="две коробочки" width="370">
+                                <picture>
+                                    <source
+                                        srcset="./images/portfolio/boxes_lg.webp 1x,
+                                            ./images/portfolio/boxes_lg@2x.webp 2x"
+                                        media="(min-width: 1200px)"
+                                        type="image/webp"/>
+                                    <source
+                                        srcset="./images/portfolio/boxes_lg.jpg    1x,
+                                                ./images/portfolio/boxes_lg@2x.jpg 2x"
+                                        media="(min-width: 1200px)"
+                                        type="image/jpeg"/>
+                                     <source
+                                        srcset="./images/portfolio/boxes_md.webp 1x,
+                                            ./images/portfolio/boxes_md@2x.webp 2x"
+                                        media="(min-width: 768px)"
+                                        type="image/webp"/>
+                                    <source
+                                        srcset="./images/portfolio/boxes_md.jpg    1x,
+                                                ./images/portfolio/boxes_md@2x.jpg 2x"
+                                        media="(min-width: 768px)"
+                                        type="image/jpeg"/>
+                                    <source
+                                        srcset="./images/portfolio/boxes_sm.webp 1x,
+                                            ./images/portfolio/boxes_sm@2x.webp  2x"
+                                        media="(max-width: 767px)"
+                                        type="image/webp"/>
+                                    <source
+                                        srcset="./images/portfolio/boxes_sm@2x.jpg 2x"
+                                        media="(max-width: 767px)"
+                                        type="image/jpeg"/>
+                                    <img class="portfolio-foto" 
+                                         src="./images/portfolio/boxes_sm.jpg" 
+                                         alt="две коробочки" 
+                                         width="450" 
+                                         height="294">
+                                </picture>
                                 <div class="portfolio-overlay">
                                     <p class="overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                         позволит посетителю получить исчерпывающие сведения о компании или частном лице</p>
@@ -182,7 +357,42 @@
                     <li class="portfolio-card">
                         <a href="" class="portfolio-link">
                             <div class="portfolio-foto-overlay">
-                                <img class="portfolio-foto" src="./images/portfolio/inspiration.jpg" alt="монитор" width="370">
+                                <picture>
+                                    <source
+                                        srcset="./images/portfolio/inspiration_lg.webp 1x,
+                                            ./images/portfolio/inspiration_lg@2x.webp 2x"
+                                        media="(min-width: 1200px)"
+                                        type="image/webp"/>
+                                    <source
+                                        srcset="./images/portfolio/inspiration_lg.jpg    1x,
+                                                ./images/portfolio/inspiration_lg@2x.jpg 2x"
+                                        media="(min-width: 1200px)"
+                                        type="image/jpeg"/>
+                                    <source
+                                        srcset="./images/portfolio/inspiration_md.webp 1x,
+                                            ./images/portfolio/inspiration_md@2x.webp 2x"
+                                        media="(min-width: 768px)"
+                                        type="image/webp"/>
+                                    <source
+                                        srcset="./images/portfolio/inspiration_md.jpg    1x,
+                                                ./images/portfolio/inspiration_md@2x.jpg 2x"
+                                        media="(min-width: 768px)"
+                                        type="image/jpeg"/>
+                                    <source
+                                        srcset="./images/portfolio/inspiration_sm.webp 1x,
+                                            ./images/portfolio/inspiration_sm@2x.webp  2x"
+                                        media="(max-width: 767px)"
+                                        type="image/webp"/>
+                                    <source
+                                        srcset="./images/portfolio/inspiration_sm@2x.jpg 2x"
+                                        media="(max-width: 767px)"
+                                        type="image/jpeg"/>
+                                    <img class="portfolio-foto" 
+                                        src="./images/portfolio/inspiration_sm.jpg" 
+                                        alt="монитор" 
+                                        width="450"
+                                        height="294">
+                                </picture>
                                 <div class="portfolio-overlay">
                                     <p class="overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                         позволит посетителю получить исчерпывающие сведения о компании или частном лице</p>
@@ -197,7 +407,42 @@
                     <li class="portfolio-card">
                         <a href="" class="portfolio-link">
                             <div class="portfolio-foto-overlay">
-                                <img class="portfolio-foto" src="./images/portfolio/limited-edition.jpg" alt="открытая книга" width="370">
+                                <picture>
+                                    <source
+                                        srcset="./images/portfolio/limited-edition_lg.webp 1x,
+                                            ./images/portfolio/limited-edition_lg@2x.webp 2x"
+                                        media="(min-width: 1200px)"
+                                        type="image/webp"/>
+                                    <source
+                                        srcset="./images/portfolio/limited-edition_lg.jpg    1x,
+                                                ./images/portfolio/limited-edition_lg@2x.jpg 2x"
+                                        media="(min-width: 1200px)"
+                                        type="image/jpeg"/>
+                                     <source
+                                        srcset="./images/portfolio/limited-edition_md.webp 1x,
+                                            ./images/portfolio/limited-edition_md@2x.webp 2x"
+                                        media="(min-width: 768px)"
+                                        type="image/webp"/>
+                                    <source
+                                        srcset="./images/portfolio/limited-edition_md.jpg    1x,
+                                                ./images/portfolio/limited-edition_md@2x.jpg 2x"
+                                        media="(min-width: 768px)"
+                                        type="image/jpeg"/>
+                                    <source
+                                        srcset="./images/portfolio/limited-edition_sm.webp 1x,
+                                            ./images/portfolio/limited-edition_sm@2x.webp  2x"
+                                        media="(max-width: 767px)"
+                                        type="image/webp"/>
+                                    <source
+                                        srcset="./images/portfolio/limited-edition_sm@2x.jpg 2x"
+                                        media="(max-width: 767px)"
+                                        type="image/jpeg"/>
+                                    <img class="portfolio-foto" 
+                                        src="./images/portfolio/limited-edition_sm.jpg" 
+                                        alt="открытая книга" 
+                                        width="450" 
+                                        height="294">
+                                </picture>
                                 <div class="portfolio-overlay">
                                     <p class="overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                         позволит посетителю получить исчерпывающие сведения о компании или частном лице</p>
@@ -212,7 +457,42 @@
                     <li class="portfolio-card">
                         <a href="" class="portfolio-link">
                             <div class="portfolio-foto-overlay">
-                                <img class="portfolio-foto" src="./images/portfolio/lab.jpg" alt="бирка с надписью">
+                                <picture>
+                                    <source
+                                        srcset="./images/portfolio/lab_lg.webp 1x,
+                                            ./images/portfolio/lab_lg@2x.webp 2x"
+                                        media="(min-width: 1200px)"
+                                        type="image/webp"/>
+                                    <source
+                                        srcset="./images/portfolio/lab_lg.jpg    1x,
+                                                ./images/portfolio/lab_lg@2x.jpg 2x"
+                                        media="(min-width: 1200px)"
+                                        type="image/jpeg"/>
+                                    <source
+                                        srcset="./images/portfolio/lab_md.webp 1x,
+                                            ./images/portfolio/lab_md@2x.webp 2x"
+                                        media="(min-width: 768px)"
+                                        type="image/webp"/>
+                                    <source
+                                        srcset="./images/portfolio/lab_md.jpg    1x,
+                                                ./images/portfolio/lab_md@2x.jpg 2x"
+                                        media="(min-width: 768px)"
+                                        type="image/jpeg"/>
+                                    <source
+                                        srcset="./images/portfolio/lab_sm.webp 1x,
+                                            ./images/portfolio/lab_sm@2x.webp  2x"
+                                        media="(max-width: 767px)"
+                                        type="image/webp"/>
+                                    <source
+                                        srcset="./images/portfolio/lab_sm@2x.jpg 2x"
+                                        media="(max-width: 767px)"
+                                        type="image/jpeg"/>
+                                    <img class="portfolio-foto" 
+                                        src="./images/portfolio/lab_sm.jpg" 
+                                        alt="бирка с надписью" 
+                                        width="450" 
+                                        height="294">
+                                </picture>
                                 <div class="portfolio-overlay">
                                     <p class="overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                         позволит посетителю получить исчерпывающие сведения о компании или частном лице</p>
@@ -227,7 +507,42 @@
                     <li class="portfolio-card">
                         <a href="" class="portfolio-link">
                             <div class="portfolio-foto-overlay">
-                                <img class="portfolio-foto" src="./images/portfolio/glowing-business.jpg" alt="ноутбук" width="370">
+                                <picture>
+                                    <source
+                                        srcset="./images/portfolio/glowing-business_lg.webp 1x,
+                                            ./images/portfolio/glowing-business_lg@2x.webp 2x"
+                                        media="(min-width: 1200px)"
+                                        type="image/webp"/>
+                                    <source
+                                        srcset="./images/portfolio/glowing-business_lg.jpg    1x,
+                                                ./images/portfolio/glowing-business_lg@2x.jpg 2x"
+                                        media="(min-width: 1200px)"
+                                        type="image/jpeg"/>
+                                    <source
+                                        srcset="./images/portfolio/glowing-business_md.webp 1x,
+                                            ./images/portfolio/glowing-business_md@2x.webp 2x"
+                                        media="(min-width: 768px)"
+                                        type="image/webp"/>
+                                    <source
+                                        srcset="./images/portfolio/glowing-business_md.jpg    1x,
+                                                ./images/portfolio/glowing-business_md@2x.jpg 2x"
+                                        media="(min-width: 768px)"
+                                        type="image/jpeg"/>
+                                    <source
+                                        srcset="./images/portfolio/glowing-business_sm.webp 1x,
+                                            ./images/portfolio/glowing-business_sm@2x.webp  2x"
+                                        media="(max-width: 767px)"
+                                        type="image/webp"/>
+                                    <source
+                                        srcset="./images/portfolio/glowing-business_sm@2x.jpg 2x"
+                                        media="(max-width: 767px)"
+                                        type="image/jpeg"/>
+                                    <img class="portfolio-foto" 
+                                        src="./images/portfolio/glowing-business_sm.jpg" 
+                                        alt="ноутбук"
+                                        width="450" 
+                                        height="294">
+                                </picture>
                                 <div class="portfolio-overlay">
                                     <p class="overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                         позволит посетителю получить исчерпывающие сведения о компании или частном лице</p>
