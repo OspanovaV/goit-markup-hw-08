@@ -9,8 +9,13 @@
     align-items: center;
     justify-content: center;
 
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.71;
+    letter-spacing: 0.03px;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+    }
 }
 
 .checkbox-icon {
