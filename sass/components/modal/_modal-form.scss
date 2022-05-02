@@ -57,11 +57,20 @@
     line-height: 1.15;
     text-align: center;
     color: var(--title-text-color);
+
+    @media screen and (max-width: 480px) {
+        margin-bottom: 19px;
+        font-size: 14px;
+    }
 }
 
 .form-field {
     position: relative;
     margin-bottom: 28px;
+
+    @media screen and (max-width: 480px) {
+        margin-bottom: 19px;        
+    }
 }
 
 .form-label {

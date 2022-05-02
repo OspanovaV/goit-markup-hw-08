@@ -81,13 +81,22 @@
 }
 
 .overlay-text {
+    
     font-size: 18px;
     line-height: 1.55;
 
     padding-top: 63px;
     padding-left: 24px;
+    padding-right: 24px;
     margin: 0;
     color: var(--secondary-white-color);
+
+    @media screen and(max-width:479px) {
+        padding-top: 18px;
+        padding-left: 18px;
+
+        font-size: 16px;
+    }
 }
 
 .portfolio-link-container {
@@ -95,6 +104,10 @@
     border-left: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
     border-right: 1px solid #eeeeee;
+
+    @media screen and(min-width:768px) and (max-width: 1199px) {
+        height: 147px;
+    }
 }
 
 .portfolio-title {
